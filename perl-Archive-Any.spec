@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Archive
-%define	pnam	Any
+%define		pdir	Archive
+%define		pnam	Any
 Summary:	Archive::Any - Single interface to deal with zips and tarballs
 Summary(pl):	Archive::Any - wspólny interfejs do obs³ugi archiwów zip i tar
 Name:		perl-Archive-Any
@@ -28,7 +28,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This module is a single interface for manipulating different archive
-formats.  Tarballs, zip files, etc...
+formats. Tarballs, zip files, etc...
 
 %description -l pl
 Ten modu³ to wspólny interfejs do obrabiania archiwów w ró¿nych
