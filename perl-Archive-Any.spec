@@ -21,7 +21,7 @@ BuildRequires:	perl-Class-Virtual
 BuildRequires:	perl(Class::Virtually::Abstract) >= 0.02
 BuildRequires:	perl-Test-Simple >= 0.11
 %endif
-BuildRequires:	perl-devel >= 5.8.0
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
