@@ -8,21 +8,30 @@
 Summary:	Archive::Any - Single interface to deal with zips and tarballs
 Summary(pl):	Archive::Any - wspólny interfejs do obs³ugi archiwów zip i tar
 Name:		perl-Archive-Any
-Version:	0.06
-Release:	3
-License:	unknown
+Version:	0.093
+Release:	1
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	85cb1a7f4a79152ee59396dda4134328
+Source0:	http://www.cpan.org/modules/by-module/Archive/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	ba6bf97e81669e7e371e35ffa11f83cb
+URL:		http://search.cpan.org/dist/Archive-Any/
 %if %{with tests}
 BuildRequires:	perl-Archive-Tar >= 1.07
 BuildRequires:	perl-Archive-Zip >= 1.07
-BuildRequires:	perl-Class-Virtual >= 0.04
-#BuildRequires:	perl(Class::Virtually::Abstract) >= 0.02
-BuildRequires:	perl-Test-Simple >= 0.11
+BuildRequires:	perl-File-MMagic >= 1.27
+BuildRequires:	perl-MIME-Types >= 1.16
+BuildRequires:	perl-Module-Find >= 0.05
+BuildRequires:	perl-Test-Simple >= 0.40
+BuildRequires:	perl-Test-Warn
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+Requires:	perl-Archive-Tar >= 1.07
+Requires:	perl-Archive-Zip >= 1.07
+Requires:	perl-File-MMagic >= 1.27
+Requires:	perl-MIME-Types >= 1.16
+Requires:	perl-Module-Find >= 0.05
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -55,6 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_vendorlib}/%{pdir}/*.pm
-%{perl_vendorlib}/%{pdir}/%{pnam}
+%doc Changes
+%{perl_vendorlib}/Archive/Any.pm
+%{perl_vendorlib}/Archive/Any
 %{_mandir}/man3/*
