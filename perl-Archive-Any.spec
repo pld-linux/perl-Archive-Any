@@ -6,7 +6,7 @@
 %define		pdir	Archive
 %define		pnam	Any
 Summary:	Archive::Any - Single interface to deal with zips and tarballs
-Summary(pl):	Archive::Any - wspÛlny interfejs do obs≥ugi archiwÛw zip i tar
+Summary(pl.UTF-8):   Archive::Any - wsp√≥lny interfejs do obs≈Çugi archiw√≥w zip i tar
 Name:		perl-Archive-Any
 Version:	0.093
 Release:	1
@@ -39,8 +39,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This module is a single interface for manipulating different archive
 formats. Tarballs, zip files, etc...
 
-%description -l pl
-Ten modu≥ to wspÛlny interfejs do obrabiania archiwÛw w rÛønych
+%description -l pl.UTF-8
+Ten modu≈Ç to wsp√≥lny interfejs do obrabiania archiw√≥w w r√≥≈ºnych
 formatach: tar, zip itp.
 
 %prep
