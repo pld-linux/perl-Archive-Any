@@ -6,7 +6,7 @@
 %define		pdir	Archive
 %define		pnam	Any
 Summary:	Archive::Any - Single interface to deal with zips and tarballs
-Summary(pl.UTF-8):   Archive::Any - wspólny interfejs do obsługi archiwów zip i tar
+Summary(pl.UTF-8):	Archive::Any - wspólny interfejs do obsługi archiwów zip i tar
 Name:		perl-Archive-Any
 Version:	0.093
 Release:	1
