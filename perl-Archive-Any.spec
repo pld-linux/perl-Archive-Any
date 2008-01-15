@@ -22,6 +22,7 @@ BuildRequires:	perl-Archive-Zip >= 1.07
 BuildRequires:	perl-File-MMagic >= 1.27
 BuildRequires:	perl-MIME-Types >= 1.16
 BuildRequires:	perl-Module-Find >= 0.05
+BuildRequires:	perl-Test-Perl-Critic
 BuildRequires:	perl-Test-Pod-Coverage
 BuildRequires:	perl-Test-Simple >= 0.40
 BuildRequires:	perl-Test-Warn
