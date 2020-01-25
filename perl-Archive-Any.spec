@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Archive
 %define		pnam	Any
 Summary:	Archive::Any - Single interface to deal with zips and tarballs
