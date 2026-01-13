@@ -8,7 +8,7 @@ Summary:	Archive::Any - Single interface to deal with zips and tarballs
 Summary(pl.UTF-8):	Archive::Any - wspólny interfejs do obsługi archiwów zip i tar
 Name:		perl-Archive-Any
 Version:	0.0945
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
